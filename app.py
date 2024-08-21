@@ -1,6 +1,6 @@
 import click
 from crud import add, list, delete
-from summary import summary, year
+from summary import summary
 
 @click.group()
 def cli():
