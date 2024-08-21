@@ -21,3 +21,15 @@ def add(description, amount):
 
     click.echo("Expense added successfully!")
 
+
+# List all expenses
+@click.command()
+def list():
+    data = load_json('expenses.json')
+
+    click.echo("ID | DESCRIPTION | AMOUNT | DATE")
+    for expense in data['expenses']:
+        click.echo(f"{expense['id']} | {expense['description']} | {expense['amount']} | {expense['date']}")
+
+
+
