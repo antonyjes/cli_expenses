@@ -32,4 +32,18 @@ def list():
         click.echo(f"{expense['id']} | {expense['description']} | {expense['amount']} | {expense['date']}")
 
 
+# Delete an expense
+@click.command()
+@click.option('--id', prompt=True)
+def delete(id):
+    data = load_json('expenses.json')
+    
+    for expense in data['expenses']:
+        if expense['id'] == id:
+            data['expenses'].remove(expense)
+            break
+    
+    save_json('expenses.json', data)
+
+    click.echo("Expense deleted successfully!")
 
