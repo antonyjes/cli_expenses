@@ -11,8 +11,8 @@ def add(description, amount):
     new_expense = {
         "id": str(uuid.uuid4()),
         "description": description,
-        "amount": amount,
-        "date": datetime.datetime.now.isoformat()
+        "amount": float(amount),
+        "date": datetime.datetime.now().isoformat()
     }
 
     data = load_json('expenses.json')
