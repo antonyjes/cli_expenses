@@ -1,0 +1,10 @@
+{
+  "expenses": [
+    {
+      "id": "3b9a72b5-0d22-4d5c-b253-8de34c591d3b",
+      "description": "Food",
+      "amount": 100.0,
+      "date": "2020-01-01"
+    }
+  ]
+}
