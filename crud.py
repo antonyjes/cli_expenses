@@ -7,12 +7,12 @@ import datetime
 @click.command()
 @click.option('--description', prompt=True)
 @click.option('--amount', prompt=True)
-def add(description, amount):
+def add(description, amount): 
     new_expense = {
         "id": str(uuid.uuid4()),
         "description": description,
         "amount": float(amount),
-        "date": datetime.datetime.now().isoformat()
+        "date": datetime.datetime.now().isoformat()[:10],
     }
 
     data = load_json('expenses.json')
