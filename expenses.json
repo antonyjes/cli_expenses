@@ -5,6 +5,18 @@
       "description": "Food",
       "amount": 100.0,
       "date": "2020-01-01"
+    },
+    {
+      "id": "6c8dac4a-1efb-43cf-9a34-f7a4604b39a9",
+      "description": "Games",
+      "amount": 35.32,
+      "date": "2024-08-21"
+    },
+    {
+      "id": "b3c7cd4f-21dc-4380-89ba-e2137a080576",
+      "description": "Luz",
+      "amount": 70.0,
+      "date": "2024-08-21"
     }
   ]
 }
